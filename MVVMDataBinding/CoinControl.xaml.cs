@@ -60,5 +60,15 @@ namespace MVVMDataBinding
         {
             InitializeComponent();
         }
+
+        public void OnIncreaseClicked(object sender, RoutedEventArgs e)
+        {
+            Quantity++;
+        }
+
+        public void OnDecreaseClicked(object sender, RoutedEventArgs e)
+        {
+            Quantity--;
+        }
     }
 }
