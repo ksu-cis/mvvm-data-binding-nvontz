@@ -40,7 +40,7 @@ namespace MVVMDataBinding
 
         public int Nickles
         {
-            get => drawer.Pennies;
+            get => drawer.Nickels;
 
             set
             {
@@ -93,7 +93,7 @@ namespace MVVMDataBinding
                 var quantity = value - drawer.HalfDollars;
                 if (quantity > 0) drawer.AddCoin(Coins.HalfDollar, quantity);
                 else drawer.RemoveCoin(Coins.HalfDollar, -quantity);
-                InvokePropertyChanged("Pennies");
+                InvokePropertyChanged("HalfDollars");
 
             }
         }

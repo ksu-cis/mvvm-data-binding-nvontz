@@ -12,7 +12,13 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-            
+            <local:BillControl Denomination="One" Quantity="{Binding Path=Ones}"/>
+            <local:BillControl Denomination="Two" Quantity="{Binding Path=Twos}"/>
+            <local:BillControl Denomination="Five" Quantity="{Binding Path=Fives}"/>
+            <local:BillControl Denomination="Ten" Quantity="{Binding Path=Tens}"/>
+            <local:BillControl Denomination="Twenty" Quantity="{Binding Path=Twenties}"/>
+            <local:BillControl Denomination="Fifty" Quantity="{Binding Path=Fifties}"/>
+            <local:BillControl Denomination="Hundred" Quantity="{Binding Path=Hundreds}"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1">
             <local:CoinControl Denomination="Penny" Quantity="{Binding Path=Pennies}"/>
